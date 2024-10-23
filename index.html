@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打磚塊遊戲</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>打磚塊遊戲</h1>
+        <label for="difficulty">選擇難度:</label>
+        <select id="difficulty">
+            <option value="easy">簡單</option>
+            <option value="medium">中等</option>
+            <option value="hard">困難</option>
+        </select>
+        <button id="start-button">開始遊戲</button>
+    </div>
+    <canvas id="gameCanvas" width="480" height="320"></canvas>
+    <div id="scoreboard">
+        <p>生命: <span id="lives">3</span></p>
+        <p>分數: <span id="score">0</span></p>
+    </div>
+    <audio id="background-music" src="background.mp3" loop></audio>
+    <audio id="hit-sound" src="hit.mp3"></audio>
+    <audio id="gameover-sound" src="gameover.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
